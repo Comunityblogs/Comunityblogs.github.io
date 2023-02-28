@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunity Blogs</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style/gmsw.css">
+</head>
+<body>
+    <nav>
+        <div class="mobile">
+            <div class="header">
+              <div class="logo">Comunity Blogs</div>
+            </div>
+            <div class="links">
+              <a href="index.html">Principal</a>
+              <a href="nvds.html">Novedades</a>
+              <a href="mssc.html">Musica</a>
+              <a href="iimmgs.html">Juegos</a>
+              <a href="iimmgs.html">videos</a>
+              <a href="gmss.html">FAQ</a>
+            </div>
+          </div>
+          <div class="desktop">
+            <div class="logo">Comunity Blogs</div>
+    
+            <div class="primary">
+              <a href="index.html">Principal</a>
+              <a href="nvds.html">Novedades</a>
+              <a href="mssc.html">Musica</a>
+              <a href="iimmgs.html">Juegos</a>
+            </div>
+    
+            <div class="secondary full">
+              <a href="iimmgs.html">Videos</a>
+              <a href="gmss.html">FAQ</a>
+            </div>
+            <div class="secondary mini">
+              <a href="#"></a>
+              <div class="submenu">
+              <a href="gmss.html">FAQ</a>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <div id="wrapper">
+        <div id="form-box">
+            <div class="cllors">
+             <h1>GAMES</h1>
+            </div>
+                <form>
+                    <select id="language">
+                    <option  value="HTML"selected="selected">MiNECRAFT</option>
+                    <option value="CSS">PELICULAS</option>
+                    <option value="JS">SERIE</option>
+                    <option value="PY">MUSICA</option>
+                    <option value="C">Noticia</option>
+                    </select> 
+                    <a href="#lb3" class="choose-lang">A Jugar</a>
+                    </form>
+            </div>    
+        </div>
+        
+        <div class="quiz">
+            
+            <div id="info">
+                <div id="score">Record: 0</div>
+                <div id="ques-left">Preguntas:1/20</div>
+            </div>
+            <div id="ques-view">
+               
+            </div>
+            <div class="question">
+            <h1>PREGUNTAS</h1>
+            </div>
+            
+            <div class="choice">
+                <div class="options"><input type="radio" name="options" value="option1" id="opt0"><label for="opt0" id="lb0">Opcion1</label></div>
+                <div class="options"><input type="radio" name="options" value="option2" id="opt1"><label for="opt1" id="lb1">Opcion2</label></div>
+                <div class="options"><input type="radio" name="options" value="option3" checked="checked" id="opt2"><label for="opt2" id="lb2">Opcion3</label></div>
+                <div class="options"><input type="radio" name="options" value="option4" id="opt3"><label for="opt3" id="lb3">Opcion4</label></div>   
+            </div>
+
+             <div class="ans-btn">
+                <button type="button" class="submit-answer">Enviar respuesta</button>
+                 <a href="#display-final-score" type="button" class="view-results">Ver resultados</a>
+            </div>
+        
+        </div>
+        
+        <div class="final-result">
+            <h1>The Quiz is Over</h1>
+            <div class="solved-ques-no">You Solved 10 questions of HTML</div>
+            <div class="right-wrong">3 Were Right and 4 were Wrong</div>
+            <div id="display-final-score">Your Final Score is: 35</div>
+            <div class="remark">Remark: Satisfactory, Keep trying.</div>
+            <button id="restart">Restart Quiz</button>        
+        </div>
+        <style>
+                background-image: url('imgs/Comunitygames.png');
+        </style>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunity Blogs</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <nav>
+        <div class="mobile">
+            <div class="header">
+              <div class="logo">Comunity Blogs</div>
+            </div>
+            <div class="links">
+              <a href="index.html">Principal</a>
+              <a href="nvds.html">Novedades</a>
+              <a href="mssc.html">Musica</a>
+              <a href="iimmgs.html">Juegos</a>
+              <a href="iimmgs.html">videos</a>
+              <a href="gmss.html">FAQ</a>
+            </div>
+          </div>
+          <div class="desktop">
+            <div class="logo">Comunity Blogs</div>
+    
+            <div class="primary">
+              <a href="index.html">Principal</a>
+              <a href="nvds.html">Novedades</a>
+              <a href="mssc.html">Musica</a>
+              <a href="iimmgs.html">Juegos</a>
+            </div>
+    
+            <div class="secondary full">
+              <a href="iimmgs.html">Videos</a>
+              <a href="gmss.html">FAQ</a>
+            </div>
+            <div class="secondary mini">
+              <a href="#"></a>
+              <div class="submenu">
+              <a href="gmss.html">FAQ</a>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <style>
+    #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+    </style>
+    <main>
+      <h1 class="titulo">Preguntas Frecuentes</h1>
+      <div class="categorias" id="categorias">
+        <div class="categoria activa" data-categoria="Soporte">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 3c5.514 0 10 3.592 10 8.007 0 4.917-5.145 7.961-9.91 7.961-1.937 0-3.383-.397-4.394-.644-1 .613-1.595 1.037-4.272 1.82.535-1.373.723-2.748.602-4.265-.838-1-2.025-2.4-2.025-4.872-.001-4.415 4.485-8.007 9.999-8.007zm0-2c-6.338 0-12 4.226-12 10.007 0 2.05.738 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.602-.47 6.301-1.508 7.978-2.536 1.418.345 2.775.503 4.059.503 7.084 0 11.91-4.837 11.91-9.961-.001-5.811-5.702-10.006-12.001-10.006zm1.024 13.975c0 .566-.458 1.025-1.024 1.025-.565 0-1.024-.459-1.024-1.025 0-.565.459-1.024 1.024-1.024.566 0 1.024.459 1.024 1.024zm1.141-8.192c-.498-.505-1.241-.783-2.09-.783-1.786 0-2.941 1.271-2.941 3.237h1.647c0-1.217.68-1.649 1.261-1.649.519 0 1.07.345 1.117 1.004.052.694-.319 1.046-.788 1.493-1.157 1.1-1.179 1.633-1.173 2.842h1.643c-.01-.544.025-.986.766-1.785.555-.598 1.245-1.342 1.259-2.477.008-.758-.233-1.409-.701-1.882z"/></svg>
+          <p>Soporte</p>
+        </div>
+        <div class="categoria" data-categoria=" Idea">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 1c-6.338 0-12 4.226-12 10.007 0 2.05.739 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.601-.47 6.3-1.508 7.978-2.536 1.417.345 2.774.504 4.058.504 7.084 0 11.91-4.838 11.91-9.961 0-5.812-5.701-10.007-12-10.007zm0 2c5.514 0 10 3.592 10 8.007 0 4.917-5.144 7.961-9.91 7.961-1.937 0-3.383-.398-4.394-.644-1 .613-1.594 1.037-4.272 1.82.534-1.373.722-2.748.601-4.265-.838-1-2.025-2.4-2.025-4.872 0-4.415 4.486-8.007 10-8.007zm.217 14h-.447c-.117 0-.231-.04-.308-.109l-.594-.391h2.25l-.594.391c-.076.069-.189.109-.307.109zm.922-1h-2.279c-.138 0-.25-.111-.25-.25 0-.138.112-.25.25-.25h2.279c.138 0 .25.112.25.25s-.111.25-.25.25zm-1.322-.986h-1.414c-.013-2.57-1.403-2.878-1.403-4.647 0-1.695 1.327-2.852 3-2.852h.02c1.663.009 2.98 1.163 2.98 2.852 0 1.769-1.391 2.077-1.404 4.647h-1.414c0-2.735 1.318-3.614 1.318-4.651 0-.856-.694-1.333-1.5-1.348h-.019c-.798.022-1.481.499-1.481 1.348 0 1.037 1.317 1.915 1.317 4.651zm4.053-3.628l1.349.612-.414.91-1.298-.588c.151-.3.276-.608.363-.934zm-7.739-.001c.086.332.208.631.359.935l-1.295.588-.414-.91 1.35-.613zm9.369-.885h-1.501c.01-.335-.021-.673-.093-1h1.594v1zm-9.499 0h-1.501v-1h1.594c-.072.327-.102.663-.093.998v.002zm7.021-2.714l1.242-.882.579.816-1.252.888c-.146-.291-.336-.566-.569-.822zm-6.044-.001c-.23.252-.418.525-.569.823l-1.251-.888.578-.816 1.242.881zm4.435-1.046l.663-1.345.896.443-.663 1.345c-.278-.184-.581-.332-.896-.443zm-2.826-.001c-.315.11-.618.258-.897.442l-.663-1.343.897-.443.663 1.344zm1.913-.207c-.334-.04-.654-.042-1-.002v-1.529h1v1.531z"/></svg>
+          <p>Idea</p>
+        </div>
+        <div class="categoria" data-categoria="seguridad">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12.729 15.415c.508 0 1.303.372 1.695.639l-2.131-5.413c-.464-1.177 1.301-1.828 1.75-.688l1.443 3.661c.167.424.808.173.641-.252l-.355-.903c.315-.001.751-.055 1.055.021.197.049.354.151.434.358l.292.74c.166.422.805.171.641-.252l-.337-.855c.426-.017.73-.03 1.01.04.199.05.36.153.441.361l.248.628c.162.425.805.174.641-.251l-.279-.705c.236.016.442.036.627.082.523.131.884.468 1.28 1.477.788 2.001.208 2.896 1.001 4.91l-5.201 1.987c-2.064-2.522-4.494-3.269-5.144-3.682-1.283-.82-.765-1.903.248-1.903zm-1.291-5.26c-.055-.709.369-1.338 1.039-1.602.659-.262 1.403-.098 1.851.464-.05-1.118-1.185-1.865-2.24-1.453-1.051.415-1.377 1.737-.65 2.591zm-.084 3.514l-.263-.669h-9.091v-8h20v6.05c.902.564 1.371 1.477 1.685 2.271.135.341.234.658.315.958v-11.279h-24v12h10.008c.284-.583.753-1.05 1.346-1.331zm-4.354-4.669c0 .552.447 1 1 1s1-.448 1-1-.447-1-1-1-1 .448-1 1zm-3 0c0 .552.447 1 1 1s1-.448 1-1-.447-1-1-1-1 .448-1 1z"/></svg>
+          <p>Seguridad</p>
+        </div>
+        <div class="categoria" data-categoria="cuenta">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 22h-24v-20h24v20zm-1-19h-22v18h22v-18zm-4 13v1h-4v-1h4zm-6.002 1h-10.997l-.001-.914c-.004-1.05-.007-2.136 1.711-2.533.789-.182 1.753-.404 1.892-.709.048-.108-.04-.301-.098-.407-1.103-2.036-1.305-3.838-.567-5.078.514-.863 1.448-1.359 2.562-1.359 1.105 0 2.033.488 2.545 1.339.737 1.224.542 3.033-.548 5.095-.057.106-.144.301-.095.41.14.305 1.118.531 1.83.696 1.779.41 1.773 1.503 1.767 2.56l-.001.9zm-9.998-1h8.999c.003-1.014-.055-1.27-.936-1.473-1.171-.27-2.226-.514-2.57-1.267-.174-.381-.134-.816.119-1.294.921-1.739 1.125-3.199.576-4.111-.332-.551-.931-.855-1.688-.855-.764 0-1.369.31-1.703.871-.542.91-.328 2.401.587 4.09.259.476.303.912.13 1.295-.342.757-1.387.997-2.493 1.252-.966.222-1.022.478-1.021 1.492zm18-3v1h-6v-1h6zm0-3v1h-6v-1h6zm0-3v1h-6v-1h6z"/></svg>
+          <p>Cuenta</p>
+        </div>
+      </div>
+      <div class="preguntas">
+
+        <!-- Preguntas Metodos de pago -->
+        <div class="contenedor-preguntas activo" data-categoria="Soporte">
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿Como puedo recuperar mi cuenta? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit.</p>
+          </div>
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿Soporta en video o musica en chat? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+          </div>
+        </div>
+  
+        <!-- Preguntas Entregas -->
+        <div class="contenedor-preguntas" data-categoria="Idea">
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿Tienen entregas a domicilio? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+          </div>
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿En cuanto sale el envio a mi país? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+          </div>
+        </div>
+  
+        <!-- Preguntas Seguridad -->
+        <div class="contenedor-preguntas" data-categoria="seguridad">
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿Como puedo saber si son confiables? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+          </div>
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿Que pasa con mis datos personales? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+          </div>
+        </div>
+  
+        <!-- Preguntas Cuenta -->
+        <div class="contenedor-preguntas" data-categoria="cuenta">
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿Como puedo acceder a mis pedidos? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+          </div>
+          <div class="contenedor-pregunta">
+            <p class="pregunta">¿Como puedo cambiar mi contraseña? <img src="./img/suma.svg" alt="Abrir Respuesta" /></p>
+            <p class="respuesta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.adipisicing elit. Voluptatum laborum porro voluptates, sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates soluta adipisci, perferendis voluptatibus eligendi vel saepe harum. Consectetur, doloribus.</p>
+          </div>
+        </div>
+  <style>
+  main {
+	max-width: 1000px;
+	width: 90%;
+	margin: 40px auto;
+}
+
+.titulo {
+	color: #3a3a3a;
+	font-weight: 700;
+	text-align: center;
+	margin: 60px 0;
+}
+
+.categorias {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	margin-bottom: 60px;
+}
+
+.categoria {
+	cursor: pointer;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	background: #fff;
+	font-weight: 700;
+	color: var(--gris-claro);
+	border: 2px solid transparent;
+	transition: .3s ease all;
+}
+
+.categoria:hover {
+	box-shadow: var(--sombra);
+	color: #000;
+}
+
+.categoria:hover path {
+	fill: var(--primario);
+}
+
+.categoria svg {
+	width: 64px;
+	margin-bottom: 10px;
+}
+
+.categoria path {
+	fill: var(--gris-claro);
+	transition: .3s ease all;
+}
+
+.categoria.activa {
+	border: 2px solid var(--primario);
+	color: #000;
+}
+
+.categoria.activa path {
+	fill: var(--primario);
+}
+
+/*! =================================================*/
+/*! ============= Contenedor Preguntas ============= */
+/*! =================================================*/
+.contenedor-preguntas {
+	display: none;
+	grid-template-columns: 1fr;
+	gap: 40px;
+}
+
+.contenedor-preguntas.activo {
+	display: grid;
+}
+
+.contenedor-pregunta {
+	background: #fff;
+	padding: 40px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor-pregunta:hover {
+	box-shadow: var(--sombra);
+}
+
+.contenedor-pregunta.activa {
+	border: 2px solid var(--primario);
+}
+
+/*! =================================================*/
+/*! ============= Preguntas ============= */
+/*! =================================================*/
+.pregunta {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pregunta img {
+	width: 14px;
+}
+
+.respuesta {
+	color: #808080;
+	line-height: 30px;
+	max-height: 0;
+	opacity: 0;
+	transition: .3s ease all;
+}
+
+.contenedor-pregunta.activa .respuesta {
+	opacity: 1;
+	margin-top: 20px;
+}
+
+.contenedor-pregunta.activa img {
+	transform: rotate(45deg);
+}
+
+/*! =================================================*/
+/*! ============= Responsive Design ============= */
+/*! =================================================*/
+@media screen and (max-width: 820px){
+	.categorias {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.categoria {
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+	}
+
+	.categoria svg {
+		width: 30px;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.categorias {
+		grid-template-columns: 1fr;
+	}
+}
+  </style>
+  
+  
+  
+   </div>
+   </div>
+</main>
+<script>
+  var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<script src="js/catgs.js"></script>
+<script src="js/prgqs.js"></script>
+</body>
+</html>
